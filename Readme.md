@@ -24,11 +24,11 @@ A clean, minimal personal portfolio built with pure HTML, CSS, and vanilla JavaS
 
 ```
 portfolio/
-├── index.html       # All HTML, CSS, and JS in a single file
-└── README.md        # You're reading this
+├── index.html
+├── style.css
+├── script.js   
+└── README.md       
 ```
-
-> The entire site lives in one `index.html` file for simplicity. You can split it into separate CSS/JS files as you scale.
 
 ---
 
@@ -40,23 +40,8 @@ portfolio/
 git clone https://github.com/yourusername/portfolio.git
 cd portfolio
 ```
-
-### 2. Open locally
-
-No build step needed. Just open the file in your browser:
-
-```bash
-# macOS
-open index.html
-
-# Linux
-xdg-open index.html
-
-# Windows
-start index.html
-```
-
-Or serve it with a local dev server for live reload:
+## 2. Test
+Serve it with a local dev server for live reload:
 
 ```bash
 # Using VS Code Live Server extension (recommended)
@@ -74,8 +59,6 @@ Then visit `http://localhost:8000`.
 ---
 
 ## ✏️ Customization
-
-All content is in `index.html`. Search for the placeholder values below and replace them with your own.
 
 ### Personal Info
 
@@ -172,7 +155,7 @@ In the footer, update the href values:
 
 ## 🎨 Theming
 
-CSS custom properties are defined at the top of the `<style>` block. Change these to retheme the entire site:
+CSS custom properties are defined at `style.css` Licenseese to retheme the entire site:
 
 ```css
 :root {
@@ -226,7 +209,7 @@ npx vercel
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [GPL 3.0](LICENSE).
 
 ---
 
