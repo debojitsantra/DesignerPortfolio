@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suvadip Mondal — Design Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+  <span class="theme-icon-dark">☀️</span>
+  <span class="theme-icon-light">🌙</span>
+</button>
+
+<nav>
+  <a href="#home" class="nav-logo">SM<span>.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="home">
+  <div class="hero-photo-bg" id="heroBg"></div>
+  <div class="hero-container">
+    <div class="hero-content">
+     
+      <h1 class="hero-name">Your<br><span class="name-line2">Name</span></h1>
+      <p class="hero-role">Graphic Designer &amp; <em>Brand Storyteller</em></p>
+      <p class="hero-desc">Crafting visuals that connect. Specialised in branding, social media campaigns and editorial design for Indian D2C brands.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">See My Work →</a>
+        <a href="#contact" class="btn-outline">Let's Talk</a>
+      </div>
+      <div class="stats-strip">
+        <div class="stat-item">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">300+</div>
+          <div class="stat-label">Projects Done</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10k+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual-right">
+      <div class="hero-photo-frame" id="heroPhotoFrame">
+        <img src="https://placehold.net/400x600.png" alt="YourPhoto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects" class="section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">✦ Featured Work</div>
+    <h2 class="section-title">Selected Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card sr">
+        <div class="project-thumb">
+          <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="220" fill="#0a0a0a"/>
+            <circle cx="100" cy="110" r="55" fill="#E2FF00" opacity="0.9"/>
+            <text x="100" y="117" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#000">D2C</text>
+            <text x="200" y="75" font-family="Arial,sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">BRAND KIT</text>
+            <rect x="190" y="85" width="70" height="6" rx="3" fill="#E2FF00" opacity="0.7"/>
+            <rect x="190" y="98" width="100" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+            <rect x="190" y="111" width="80" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+            <rect x="190" y="135" width="18" height="18" rx="3" fill="#E2FF00"/>
+            <rect x="214" y="135" width="18" height="18" rx="3" fill="#ff6b35"/>
+            <rect x="238" y="135" width="18" height="18" rx="3" fill="#31a8ff"/>
+            <rect x="262" y="135" width="18" height="18" rx="3" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Branding</span>
+          <h3 class="project-title">D2C Brand Identity System</h3>
+          <p class="project-desc">Complete brand identity guidelines, logo systems and visual language for a lifestyle brand targeting urban Indian consumers.</p>
+          <a href="#" target="_blank" class="project-link">View on Behance →</a>
+        </div>
+        <div class="project-card-overlay"></div>
+      </div>
+
+      <div class="project-card sr">
+        <div class="project-thumb">
+          <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="220" fill="#0f0f1a"/>
+            <rect x="20" y="15" width="150" height="190" rx="8" fill="#161622" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <rect x="20" y="15" width="150" height="90" rx="8" fill="#E2FF00"/>
+            <text x="95" y="58" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#000">CGB</text>
+            <text x="95" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="rgba(0,0,0,0.6)">SOLUTIONS</text>
+            <rect x="30" y="118" width="130" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+            <rect x="30" y="132" width="90" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+            <rect x="35" y="155" width="70" height="20" rx="4" fill="rgba(226,255,0,0.15)" stroke="#E2FF00" stroke-width="1"/>
+            <text x="70" y="169" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#E2FF00">Shop Now</text>
+            <rect x="185" y="15" width="155" height="90" rx="8" fill="#1a1a2a" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <circle cx="262" cy="60" r="28" fill="#ff6b35" opacity="0.8"/>
+            <text x="262" y="66" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="12" font-weight="900" fill="white">NEW</text>
+            <rect x="185" y="120" width="155" height="85" rx="8" fill="#1a1a2a" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+            <rect x="200" y="135" width="120" height="6" rx="3" fill="rgba(255,255,255,0.15)"/>
+            <rect x="200" y="148" width="80" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+            <rect x="200" y="165" width="55" height="18" rx="3" fill="#ff6b35"/>
+          </svg>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Social Media</span>
+          <h3 class="project-title">Social Media Campaign — CGB Solutions</h3>
+          <p class="project-desc">Designed high-engagement Instagram and Facebook ad creatives that boosted audience engagement across digital platforms.</p>
+          <a href="#" target="_blank" class="project-link">View on Behance →</a>
+        </div>
+        <div class="project-card-overlay"></div>
+      </div>
+
+      <div class="project-card sr">
+        <div class="project-thumb">
+          <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="220" fill="#0c0c0c"/>
+            <rect x="20" y="15" width="230" height="190" rx="3" fill="#111" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+            <rect x="30" y="25" width="210" height="90" rx="2" fill="#E2FF00" opacity="0.85"/>
+            <text x="135" y="75" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#000">EDITORIAL</text>
+            <line x1="30" y1="128" x2="240" y2="128" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+            <rect x="30" y="135" width="160" height="5" rx="2" fill="rgba(255,255,255,0.6)"/>
+            <rect x="30" y="147" width="210" height="4" rx="2" fill="rgba(255,255,255,0.1)"/>
+            <rect x="30" y="158" width="170" height="4" rx="2" fill="rgba(255,255,255,0.08)"/>
+            <rect x="30" y="169" width="190" height="4" rx="2" fill="rgba(255,255,255,0.06)"/>
+            <rect x="262" y="15" width="78" height="190" rx="3" fill="#E2FF00" opacity="0.06"/>
+            <line x1="262" y1="15" x2="262" y2="205" stroke="rgba(226,255,0,0.2)" stroke-width="1"/>
+            <text x="301" y="55" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">Layout</text>
+          </svg>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Editorial</span>
+          <h3 class="project-title">Editorial &amp; Layout Design</h3>
+          <p class="project-desc">Magazine-style editorial layouts with strong typographic hierarchy, designed for print and digital formats.</p>
+          <a href="#" target="_blank" class="project-link">View on Behance →</a>
+        </div>
+        <div class="project-card-overlay"></div>
+      </div>
+
+      <div class="project-card sr">
+        <div class="project-thumb">
+          <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="220" fill="#080808"/>
+            <rect x="40" y="20" width="280" height="180" rx="6" fill="#111"/>
+            <rect x="40" y="20" width="280" height="50" rx="6" fill="#ff6b35"/>
+            <rect x="40" y="57" width="280" height="13" fill="#ff6b35"/>
+            <text x="180" y="50" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="13" font-weight="900" fill="white">Email Campaign</text>
+            <rect x="55" y="85" width="230" height="8" rx="2" fill="rgba(255,255,255,0.12)"/>
+            <rect x="55" y="100" width="180" height="8" rx="2" fill="rgba(255,255,255,0.08)"/>
+            <rect x="55" y="120" width="100" height="28" rx="4" fill="#ff6b35"/>
+            <text x="105" y="139" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="white">Shop Now</text>
+          </svg>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Email Design</span>
+          <h3 class="project-title">Email Campaign Design</h3>
+          <p class="project-desc">Conversion-focused email templates with compelling layouts for D2C product launches and seasonal campaigns.</p>
+          <a href="#" target="_blank" class="project-link">View on Behance →</a>
+        </div>
+        <div class="project-card-overlay"></div>
+      </div>
+
+      <!-- Behance CTA card -->
+      <div class="project-card behance-card sr">
+        <span class="behance-icon">🎨</span>
+        <p>See All Projects</p>
+        <small>Full portfolio with 20+ projects across branding, motion and editorial</small>
+        <a href="#" target="_blank" class="btn-primary">Visit Behance →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills" class="section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">✦ What I Bring</div>
+    <h2 class="section-title">Skills &amp; Tools</h2>
+
+    <div class="skills-layout">
+      <!-- LEFT: Technical skill bars + soft skills + tools -->
+      <div class="skills-col">
+        <div class="sub-heading">Technical Skills</div>
+        <div id="skillBars"></div>
+
+        <div class="soft-skills-wrap sr">
+          <div class="sub-heading" style="margin-top:2rem;">Soft Skills</div>
+          <div class="soft-pills" id="softPills">
+            <span class="soft-pill">Communication</span>
+            <span class="soft-pill">Storytelling</span>
+            <span class="soft-pill">Visualisation</span>
+            <span class="soft-pill">Presentation</span>
+            <span class="soft-pill">Time Management</span>
+            <span class="soft-pill">Team Collaboration</span>
+            <span class="soft-pill">Creative Thinking</span>
+            <span class="soft-pill">Client Relations</span>
+            <span class="soft-pill">Art Direction</span>
+          </div>
+        </div>
+
+        <div class="edu-block sr">
+          <div class="edu-degree">B.Sc Applied Psychology</div>
+          <div class="edu-school">The Neotia University · 2021</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Tools grid -->
+      <div class="skills-col">
+        <div class="sub-heading">Tools I Use</div>
+        <div class="tools-showcase sr">
+          <div class="tool-card ps">
+            <div class="tool-card-icon">Ps</div>
+            <div class="tool-card-name">Photoshop</div>
+            <div class="tool-card-level">Advanced</div>
+          </div>
+          <div class="tool-card ai">
+            <div class="tool-card-icon">Ai</div>
+            <div class="tool-card-name">Illustrator</div>
+            <div class="tool-card-level">Advanced</div>
+          </div>
+          <div class="tool-card ae">
+            <div class="tool-card-icon">Ae</div>
+            <div class="tool-card-name">After Effects</div>
+            <div class="tool-card-level">Proficient</div>
+          </div>
+          <div class="tool-card id">
+            <div class="tool-card-icon">Id</div>
+            <div class="tool-card-name">InDesign</div>
+            <div class="tool-card-level">Proficient</div>
+          </div>
+          <div class="tool-card fig">
+            <div class="tool-card-icon">Fg</div>
+            <div class="tool-card-name">Figma</div>
+            <div class="tool-card-level">Proficient</div>
+          </div>
+          <div class="tool-card aff">
+            <div class="tool-card-icon">Af</div>
+            <div class="tool-card-name">Affinity</div>
+            <div class="tool-card-level">Intermediate</div>
+          </div>
+          <div class="tool-card can">
+            <div class="tool-card-icon">Ca</div>
+            <div class="tool-card-name">Canva Pro</div>
+            <div class="tool-card-level">Expert</div>
+          </div>
+          <div class="tool-card pr">
+            <div class="tool-card-icon">Pr</div>
+            <div class="tool-card-name">Premiere Pro</div>
+            <div class="tool-card-level">Intermediate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section id="experience" class="section section-alt">
+  <div class="section-wrap">
+    <div class="section-eyebrow">✦ My Journey</div>
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline-grid">
+      <div class="timeline">
+        <div class="timeline-item sr">
+          <div class="tl-dot"></div>
+          <div class="tl-date">Mar 2024 – Jun 2024</div>
+          <div class="tl-company">11x Marketing, Bangalore</div>
+          <div class="tl-role">Full-Time Graphic Designer Intern</div>
+          <div class="tl-desc">Conceptualised and executed creative campaigns for D2C brands, working full-time in a fast-paced marketing environment.</div>
+        </div>
+        <div class="timeline-item sr">
+          <div class="tl-dot"></div>
+          <div class="tl-date">May 2024 – Jul 2024</div>
+          <div class="tl-company">CGB Solutions, Bangalore</div>
+          <div class="tl-role">Graphic Designer Intern</div>
+          <div class="tl-desc">Designed social media graphics, digital assets and email campaigns. Collaborated with marketing team to launch campaigns that boosted audience engagement.</div>
+        </div>
+        <div class="timeline-item sr">
+          <div class="tl-dot tl-dot--current"></div>
+          <div class="tl-date">Ongoing</div>
+          <div class="tl-company">Freelance / D2C Projects</div>
+          <div class="tl-role">Brand &amp; Campaign Designer</div>
+          <div class="tl-desc">Branding, editorial and campaign design for Indian D2C brands. Full portfolio available on Behance.</div>
+        </div>
+      </div>
+
+      <!-- Stats / highlights panel -->
+      <div class="exp-highlights">
+        <div class="highlight-card sr">
+          <div class="highlight-num">5+</div>
+          <div class="highlight-label">Years in Design</div>
+        </div>
+        <div class="highlight-card sr">
+          <div class="highlight-num">300+</div>
+          <div class="highlight-label">Projects Delivered</div>
+        </div>
+        <div class="highlight-card sr">
+          <div class="highlight-num">20</div>
+          <div class="highlight-label">Companies Worked</div>
+        </div>
+        <div class="highlight-card sr">
+          <div class="highlight-num">7+</div>
+          <div class="highlight-label">Design Tools</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVEAL QUOTE -->
+<div class="reveal-section">
+  <div class="reveal-line" id="revealLine"></div>
+</div>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact" class="section">
+  <div class="section-wrap">
+    <div class="section-eyebrow">✦ Say Hello</div>
+    <h2 class="section-title">Get In Touch</h2>
+
+    <div class="contact-grid">
+      <div>
+        <p class="contact-intro">
+          Got a project in mind? Let's make something great together. Whether it's a brand identity, a campaign, or a social media overhaul — I'm always excited to hear about new work.
+        </p>
+        <div class="contact-links">
+          <a href="tel:+9100000000000*" class="contact-link">
+            <div class="contact-link-icon">📞</div>
+            <div>
+              <span class="contact-link-label">Call / WhatsApp</span>
+              <span class="contact-link-value">+91 000000000000</span>
+            </div>
+          </a>
+          <a href="mailto:yourmail@mail.com" class="contact-link">
+            <div class="contact-link-icon">✉️</div>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">yourmain@mail.com</span>
+            </div>
+          </a>
+          <a href="#" target="_blank" class="contact-link">
+            <div class="contact-link-icon">💼</div>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">Your Name</span>
+            </div>
+          </a>
+          <a href="#" target="_blank" class="contact-link">
+            <div class="contact-link-icon">🎨</div>
+            <div>
+              <span class="contact-link-label">Portfolio</span>
+              <span class="contact-link-value">behance.net/yourusername</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label">Your Name</label>
+            <input type="text" name="name" placeholder="Some Name" required>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Email Address</label>
+            <input type="email" name="email" placeholder="somename@brand.com" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label">Subject</label>
+          <input type="text" name="subject" placeholder="Brand Identity Project">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Message</label>
+          <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" id="formBtn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a href="#home" class="footer-logo">Debojit Sanyra<span>.</span></a>
+    <p class="footer-copy">© 2026 · Crafted with ☕ &amp; creativity</p>
+    <div class="footer-links">
+      <a href="" target="_blank">Behance</a>
+      <a href="" target="_blank">LinkedIn</a>
+      <a href="">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
