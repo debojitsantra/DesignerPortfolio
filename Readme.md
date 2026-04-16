@@ -16,7 +16,6 @@ A clean, minimal personal portfolio built with pure HTML, CSS, and vanilla JavaS
 - **CTA banner** — full-width dark call-to-action strip
 - **Experience timeline** — role list paired with company logo grid
 - **Contact section** — contact info + inquiry form
-- **Zero dependencies** — no npm, no build step, just open `index.html`
 
 ---
 
